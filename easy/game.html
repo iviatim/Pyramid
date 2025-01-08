@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игра</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<div class="score-container">
+    <p id="score">Очки: 0</p>
+</div>
+<body>
+    <button id="helpButton">?</button>
+    <button id="pauseButton">||</button>
+
+    <div id = "helpMenu" class="help-menu">
+        <div class="help-menu-content">
+            <p><b>Правила:</b></p>
+            <p><b>Цель игры:</b> Собрать на палочке пирамидку из колец</p>
+            <p style="line-height: 1.5;"><b>Как играть:</b> Необходимо ловить кольца в левом блоке и перетаскивать их мышью на палочку в блоке справа.
+            <br>На этом уровне вам предстоит собрать пирамидку в порядке цветов радуги: самое большое кольцо - красное.
+            <br>Порядок строгий - от больших колец постепенно к меньшим.</p>
+            <p><b>Пример:</b></p>
+            <img src="easy.gif" alt="Пример" width="500" height="auto">
+            <p><b>Нажмите любую клавишу на клавиатуре для продолжения...</b></p>
+        </div>
+    </div>
+
+    <div id="pauseMenu" class="pause-menu">
+        <div class="pause-menu-content">
+            <button id="continueGame">Продолжить</button>
+            <button id="goToMenu">Главное меню</button>
+            <button id="saveAndShowResult">Сохранить и показать результат</button>
+        </div>
+    </div>
+
+    <div class="game-container">
+        <div class="level-info">
+            <p id="level" style="font-weight: bold;">Уровень: 1</p>
+            <p id="timer" style="font-weight: bold;">Осталось: 40 сек</p>        
+        </div>
+        <div class="blocks">
+            <div id="leftBlock" class="block"></div>
+            <div id="rightBlock" class="block">
+                <div id="stick"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="lvl_easy.js"></script>
+</body>
+</html>

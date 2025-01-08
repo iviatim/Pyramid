@@ -1,0 +1,239 @@
+body
+{
+  font-family: Arial, sans-serif;
+  background: #fbfbf6;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  user-select: none;
+}
+
+.container, .game-container
+{
+  text-align: center;
+}
+
+input, button
+{
+  margin: 10px 0;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button
+{
+  background-color: #ff9500;;
+  color: white;
+}
+
+.blocks
+{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  gap:20px;
+}
+
+.block
+{
+  width: 400px;
+  height: 400px;
+  background: #ffffff;
+  border: 4px solid #ffffb3;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#stick
+{
+  width: 10px;
+  height: 300px;
+  background: #74380d;
+  position: relative;
+}
+
+
+.ring
+{
+  border-radius: 30px;
+  position: absolute;
+  cursor: grab;
+}
+
+.ball
+{
+  border-radius: 50%;
+  position: absolute;
+}
+
+#score
+{
+  right:100px;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.score-container
+{
+  position: fixed;
+  top:20px;
+  right:-800px;
+  left:200px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+#pauseButton
+{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 9px 15px;
+  background-color: #ffd900;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 20%;
+  cursor: pointer;
+}
+
+#pauseButton:hover
+{
+  background-color: #bba200;
+}
+
+.pause-menu
+{
+  display: none;
+  position: fixed;
+  z-index: 1001;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.pause-menu-content
+{
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.pause-menu button
+{
+  display: block;
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color:#ff9500;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.pause-menu button:hover
+{
+  background-color: #ffd900;
+}
+
+
+#leaderboard
+{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#leaderboard li
+{
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+  font-size: 20px;
+}
+
+#leaderboard li .player-name
+{
+  text-align: left;
+}
+
+#leaderboard li .player-score
+{
+  text-align: right;
+}
+
+.arrow
+{
+  color: #ffffff;
+  font-size: 17px;
+}
+
+#helpButton
+{
+  position: fixed;
+  top: 20px;
+  right: 85px;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 9px 15px;
+  background-color: #ffd900;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 20%;
+  cursor: pointer;
+}
+
+#helpButton:hover
+{
+  background-color: #bba200;
+}
+
+.help-menu
+{
+  display: none;
+  position: absolute;
+  z-index: 1001;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.help-menu-content
+{
+  background-color: white;
+  width: 85%;
+  height: 85%;
+  border-radius: 10px;
+  text-align: center;
+}
+
+video
+{
+  border: 5px solid rgb(255, 230, 0);
+}
